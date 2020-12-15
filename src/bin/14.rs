@@ -11,7 +11,7 @@ enum Command<'a> {
 fn main() {
     let filename = match env::args().nth(1) {
         Some(filename) => filename,
-        None => panic!("Usage: 13 <input_file>"),
+        None => panic!("Usage: 14 <input_file>"),
     };
 
     let contents = fs::read_to_string(filename).expect("Something went wrong reading the file");
